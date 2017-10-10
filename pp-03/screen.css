@@ -19,6 +19,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #two,
 #one {
   height: 100vw;
+  width: 100vw;
   color: white;
 }
 
@@ -40,7 +41,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 @media screen and (min-width: 600px) {
   #one, #two {
-    width: 50vw;
+    width: 50%;
     height: 50vw;
   }
   #three {
@@ -50,9 +51,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 @media screen and (min-width: 800px) {
-#one, #two, #three {
-  height: 33.333vw;
-  width: 33.33vw;
-}
+  #one, #two, #three {
+    height: 33.333vw;
+    width: 33.333%;
+  }
 
 }
