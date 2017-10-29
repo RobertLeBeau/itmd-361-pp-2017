@@ -57,3 +57,12 @@ function addTwo(x) {
 
 console.log(addTwo(4)); // 6
 console.log(x); // should be 5 if you corrected the double() function above
+
+  /*
+  The reason the x variable inside the function does not modify
+  the global var x is because variables declared inside a function
+  are local to that function. This means that even if x = x + 2 inside
+  the addTwo() function returns 6 if addTwo(4), x is still 5 when
+  called outside of the function addTwo(
+  */
+)
