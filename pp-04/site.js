@@ -5,6 +5,7 @@
 var x = 5;
 
 function double(num) {
+  var x = 0;
   x = num * 2;
   return x;
 }
