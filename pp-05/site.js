@@ -1,21 +1,20 @@
-$.noConflict();
 
-(function($) {
+$(document).ready(function() {
+  $("#dbell-ring").remove();
 
-  var doorbell = new Audio('media/doorbell.mp3');
-  var image = new Image();
+  function ringDoorbell() {
+    var doorbell = new Audio('media/doorbell.mp3');
+    doorbell.play();
+  }
 
-  image.src= 'media/doorbell.png';
+  $("#dbell").on("click", function() {
+    ringDoorbell();
+});
 
-  $('html').removeClass('nojs').addClass('js');
+$(document).on("keypress", function(event) {
+    if(event.key === "d") {
+      ringDoorbell();
+    }
+});
 
-$('#dbell').on('click', function() {
-  doorbell.play();
-}});
-
-$('h1').append(image);
-$('audio').remove();
-
-
-
-})(jQuery);
+});

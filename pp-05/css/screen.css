@@ -20,6 +20,10 @@ body {
 
 /* ===== LAYOUT STYLES ===== */
 
+#dbell {
+  cursor: pointer;
+  position: relative;
+}
 
 /* ===== MODULAR STYLES ===== */
 
