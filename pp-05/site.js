@@ -9,12 +9,12 @@ $(document).ready(function() {
 
   $("#dbell").on("click", function() {
     ringDoorbell();
-});
+  });
 
-$(document).on("keypress", function(event) {
+  $(document).on("keypress", function(event) {
     if(event.key === "d") {
       ringDoorbell();
     }
-});
+  });
 
 });
